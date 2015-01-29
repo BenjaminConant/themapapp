@@ -62,7 +62,7 @@ function placeRadius(location, mapToPlace, markersArray) {
 function markYourLocation(mapToMark, markersArray){
   if(navigator.geolocation){
     // timeout at 60000 milliseconds (60 seconds)
-    var options = {bower timeout:60000};
+    var options = {timeout:60000};
     navigator.geolocation.getCurrentPosition(function(position) {
       var latitude = position.coords.latitude;
       var longitude = position.coords.longitude;
