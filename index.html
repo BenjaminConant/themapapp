@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Map App </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://www.kindergarten-lessons.com/image-files/green_ki">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link href="index.css" rel="stylesheet">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5iJvp7FDrBQvzlSd8zSqfHS1Wz04C5XM&sensor=true"></script>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script src="index.js"></script>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Map App</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="text-center">The Map App Home Page</h1>
+        <p class="lead text-center">What a great way to learn about using google maps!<br> This site is truly a work of art!</p>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <h3 class= > Map 1 - Add and Remove Map Marker on Button Press </h3>
+      <button id="mark-a-location" class="btn btn-primary">Mark A Location</button>
+      <button id="clear-map-one" class="btn btn-danger">Clear Map</button>
+    </div>
+    <div class="container">
+      <div id="map-canvas-one" class="map-canvas"></div>
+    </div>
+
+    <div class="container text-center">
+      <h3 class= > Map 2 - Add a Marker With a Custom Icon </h3>
+      <button id="mark-a-location-with-a-custom-icon" class="btn btn-primary"> Mark A Location With A Custom Icon</button>
+      <button id="clear-map-two" class="btn btn-danger">Clear Map</button>
+    </div>
+    <div class="container">
+      <div id="map-canvas-two" class="map-canvas"></div>
+    </div>
+
+    <div class="container text-center">
+      <h3 class= > Map 3 - Add Marks On Map Click </h3>
+      <button id="clear-map-three" class="btn btn-danger">Clear Map</button>
+    </div>
+    <div class="container">
+      <div id="map-canvas-three" class="map-canvas"></div>
+    </div>
+
+    <div class="container text-center">
+      <h3 class= > Map 4 - Add Editable Raduis On Map Click </h3>
+      <button id="clear-map-four" class="btn btn-danger">Clear Map</button>
+    </div>
+    <div class="container">
+      <div id="map-canvas-four" class="map-canvas"></div>
+    </div>
+
+    <div class="container text-center">
+      <h3 class= > Map 5 - Mark Your Location </h3>
+      <p> This may take a few seconds! </p>
+      <p> The Map will automatically re-center on you position! </p>
+      <button id="mark-your-location" class="btn btn-primary">Mark Your Location</button>
+      <button id="clear-map-five" class="btn btn-danger">Clear Map</button>
+    </div>
+    <div class="container">
+      <div id="map-canvas-five" class="map-canvas"></div>
+    </div>
+
+  </body>
+
+</html>
